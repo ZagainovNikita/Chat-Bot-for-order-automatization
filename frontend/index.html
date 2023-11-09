@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>At DialogFlow's Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #ff8c00; /* Orange */
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ff9f33; /* Lighter Orange */
+            color: white;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 1em;
+            margin: 0.5em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ffaa44; /* Darker Orange on hover */
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        h2 {
+            color: #ff8c00; /* Orange */
+        }
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+
+        .menu-item img {
+            max-width: 200px;
+            max-height: 160px;
+            margin-bottom: 0.5em;
+            border-radius: 5px;
+        }
+
+        .item-details span {
+            margin-bottom: 0.5em;
+        }
+
+        .end {
+            background-color: #ff8c00; /* Orange */
+            color: white;
+            text-align: center;
+            padding: 1em;
+            /*position: fixed;*/
+            /*bottom: 0;*/
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>At DialogFlow's Restaurant</h1>
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <img src="pasta.jpg" alt="Pasta">
+            <div class="item-details">
+                <span>Pasta</span>
+                <span>$5.00</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="pizza.jpg" alt="Pizza">
+            <div class="item-details">
+                <span>Pizza</span>
+                <span>$7.00</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="soup.jpg" alt="Soup">
+            <div class="item-details">
+                <span>Soup</span>
+                <span>$6.00</span>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="salad.jpg" alt="Salad">
+            <div class="item-details">
+                <span>Salad</span>
+                <span>$5.50</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For reservations and inquiries, please call us at: <strong>(555) 123-4567</strong></p>
+        <p>Or make an order using ChatBot:</p>
+    </section>
+<iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/f927b213-58de-4a5a-8322-8d3e048d39d7">
+</iframe>
+    <div class="end">
+        <p>&copy; 2023 At DialogFlow's Restaurant. All rights reserved.</p>
+    </div>
+</body>
+</html>
